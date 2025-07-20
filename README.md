@@ -68,7 +68,7 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas:   0% (0/1remote: Resolving deltas: 100% (1/1remote: Resolvi * [new branch]      ft/new -> ft/new
 branch 'ft/new' set up to track 'origin/ft/new'.
 ```
-### Exercise 3
+### Exercise 2
 
 ```bash
  
@@ -149,5 +149,64 @@ Your branch is up to date with 'origin/main'.
 
 user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (main)
 $ 
+
+```
+### Exercise 3
+
+```bash
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (main)
+$ git add .
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (main)     
+$ git commit -m'last fix on bundle 6 exercise 3'
+[main 4160af3] last fix on bundle 6 exercise 3
+ 1 file changed, 127 insertions(+)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (main)     
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.42 KiB | 1.42 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/elyse-iradukunda/git-cafe-exercise.git
+   c6b2dfa..4160af3  main -> main
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (main)     
+$ git switch fix/bug 
+Switched to branch 'fix/bug'
+Your branch is up to date with 'origin/fix/bug'.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (fix/bug)  
+$ git commit -a -m'fix: contact numbers'
+[fix/bug e0165ae] fix: contact numbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions/git-cafe-exercise (fix/bug)  
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elyse-iradukunda/git-cafe-exercise.git
+   11c1c6c..e0165ae  fix/bug -> fix/bug
 
 ```
